@@ -1,0 +1,169 @@
+body, input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #8FB4BD;
+  padding: 80px 0 0 0;
+}
+body {
+  background-image: url(../img/foto.jpg);
+  background-position: 500px 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #0A405A;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+header input {
+  width: 80%;
+  height: 75px;
+  margin-left: 4%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  background-color: #0A405A;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+
+}
+header button {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: #DC762C;
+  border: 0px;
+  box-shadow: none;
+  border-radius: 75px;
+  outline: none;
+  cursor: pointer;
+
+}
+.container {
+width: 50%;
+float:left;
+padding: 15px;
+
+}
+
+header button svg {
+  width: 50px;
+  height: 50px;
+
+}
+ul.todo {
+  width: : 100%;
+}
+ul.todo li {
+  height: 50px;
+  font-size: 25px;
+  line-height: 45px;
+  color: #fff;
+  text-indent: 25px;
+  background: #0A405A;
+  border-radius: 5px;
+  padding:0 60px;
+  display:inline-block;
+  vertical-align:top;
+  position: relative;
+  border: 15px;
+  margin-bottom: 20px;
+  margin-right: 50px
+}
+ul.todo li .button {
+  width: 20px;
+  height: 50px;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+
+}
+ul.todo li .button button svg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  float: left;
+  top: 10px;
+  left: 10px;
+}
+ul.todo li .button button {
+  width: 50px;
+  height: 50px;
+  background: #0A405A;
+  border: 0px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  float: left;
+  outline: none;
+
+
+}
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.seconds {
+  background: #000;
+  height: 45px;
+  left: 49.5%;
+  position: absolute;
+  top: 335.5px;
+  left: 1407px;
+  transform-origin: 10% 90%;
+  width: 3px;
+  z-index: 2;
+}
+.hours {
+  background: #D57425;
+  height: 30px;
+  left: 1402px;
+  position: absolute;
+  top: 350px;
+  left: 1402px;
+  transform-origin: 50% 80%;
+  width: 7px;
+  z-index: 8;
+}
+.minutes {
+  background: #D57425;
+  height: 45px;
+  left: 1405px;
+  position: absolute;
+  top: 333px;
+  transform-origin: 20% 90%;
+  width: 7px;
+  z-index: 8;
+}
+.dot {
+width: 15px;
+height: 15px;
+background-color: #0A405A;
+position: absolute;
+left: 1400px;
+top: 366px;
+border-radius: 50%;
+z-index: 10;
+}
+}
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.seconds {
+  animation: rotate 60s infinite steps(60);
+}
