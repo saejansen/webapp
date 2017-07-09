@@ -1,7 +1,6 @@
 body, input {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
-
 body {
   background-color: #8FB4BD;
   padding: 80px 0 0 0;
@@ -11,6 +10,23 @@ body {
   background-position: 500px 80px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+::-webkit-input-placeholder {
+    color:    white;
+}
+:-moz-placeholder {
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder {
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+   color:    white;
+}
+::-ms-input-placeholder { 
+   color:    white;
 }
 header {
   height: 80px;
@@ -25,8 +41,8 @@ header input {
   height: 75px;
   margin-left: 4%;
   color: #fff;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 25px;
+  font-weight: 200;
   background-color: #0A405A;
   border-radius: 5px;
   border: 0px;
@@ -46,10 +62,14 @@ header button {
   border-radius: 75px;
   outline: none;
   cursor: pointer;
+}
+header button:hover {
+background-color: #FD8B33;
+transition: ease-in-out 0.5s;
 
 }
 .container {
-width: 50%;
+width: 70%;
 float:left;
 padding: 15px;
 
@@ -65,6 +85,7 @@ ul.todo {
 }
 ul.todo li {
   height: 50px;
+  font-weight: 200;
   font-size: 25px;
   line-height: 45px;
   color: #fff;
@@ -76,8 +97,13 @@ ul.todo li {
   vertical-align:top;
   position: relative;
   border: 15px;
+  margin-left: 20px;
   margin-bottom: 20px;
-  margin-right: 50px
+  margin-right: 30px;
+}
+ul.todo li:hover{
+  background-color: #DC762C;
+  transition: ease-in 0.4s;
 }
 ul.todo li .button {
   width: 20px;
@@ -85,7 +111,10 @@ ul.todo li .button {
   position:absolute;
   bottom: 0;
   right: 0;
-
+}
+ul.todo li .button button:hover {
+  background-color: #DC762C;
+  transition: ease-in 0.4s;
 }
 ul.todo li .button button svg {
   width: 30px;
@@ -141,9 +170,9 @@ ul.todo li .button button {
 .minutes {
   background: #D57425;
   height: 45px;
-  left: 1405px;
+  left: 1406px;
   position: absolute;
-  top: 333px;
+  top: 334px;
   transform-origin: 20% 90%;
   width: 7px;
   z-index: 8;
@@ -166,4 +195,37 @@ z-index: 10;
 }
 .seconds {
   animation: rotate 60s infinite steps(60);
+}
+#nokia {
+  width: 55px;
+  height: 45px;
+  position: absolute;
+  top: 772px;
+  left: 1338px;
+  z-index: 8;
+  cursor: pointer;
+}
+#nokia:hover {
+animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+@keyframes shake {
+-webkit-transform: translate3d(0,0,0);
+  10%, 90% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(0, 1px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -2px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 2px, 0);
+  }
 }
